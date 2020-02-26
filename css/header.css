@@ -1,0 +1,116 @@
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header > div.content > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+}
+
+header > div.content > div:first-child > h2 {
+    margin-top: 20px;
+}
+
+header nav.column_menu > a {
+    transition: 0.8s ease;
+    margin-bottom: 10px;
+}
+
+header nav.column_menu > a:hover {
+    transform: translateY(-5px);
+    transition: 0.8s ease;
+}
+
+header nav.column_menu {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e6e6e6;
+}
+
+header nav.column_menu a {
+    display: block;
+    padding: 10px 0;
+    color: #262626;
+    font-family: "PT Sans";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+header nav.column_menu a:hover {
+    color: #48974c;
+    transform: translateY(-5px);
+    transition: 0.5s ease;
+}
+
+header div.burger_menu nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header div.burger_menu nav a {
+    color: #262626;
+    margin: 5px;
+    font-family: "PT Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    transition: 0.5s ease;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+header div.burger_menu nav a:hover {
+    transform: translateY(-6px);
+    transition: 0.5s ease;
+}
+
+header div.burger_menu {
+    display: none;
+}
+
+header div.burger_menu button.click_menu {
+    display: flex;
+    margin: 10px auto;
+    padding-top: 5px;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+header div.burger_menu button.click_menu span {
+    display: block;
+    width: 80px;
+    margin-bottom: 6px;
+    border-top: 2px solid #222222;
+}
+
+header div.burger_menu button.open {
+    border-top: 2px solid #48974c;
+    transition: 0.4s ease;
+}
+
+@media (max-width: 980px) {
+    header > div.content > div:first-child {
+        padding: 35px 20px 20px 0;
+    }
+
+    header nav.column_menu{
+        display: none;
+    }
+
+    header div.burger_menu {
+        display: block;
+    }
+}

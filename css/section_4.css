@@ -1,0 +1,72 @@
+section.block_4 {
+    display: flex;
+    justify-content: center;    
+    background: url(../img/section_2/sectionBackground.png) center/cover;
+}
+
+.block_4 > div.content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+
+.block_4 > div.content div {
+    height: 260px;
+    margin: 10px 0;
+    padding: 35px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.04);
+    background-color: #ffffff;
+}
+
+.block_4 > div.content > div:first-child {
+    width: 100%;
+    max-width: 360px;
+    margin-right: 20px;
+}
+
+.block_4 > div.content > div:first-child span {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    height: 150px;
+    background: url(../img/section_4/Img_1.png) center/cover;
+}
+
+.block_4 > div.content > div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 720px;
+}
+
+.block_4 > div.content > div p {
+    color: #262626;
+    font-family: "Cormorant Infant";
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+@media (max-width: 780px){
+    .block_4 > div.content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .block_4 > div.content > div:first-child {
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 480px){
+    .block_4 > div.content {
+        padding: 30px 10px;
+    }
+
+    .block_4 > div.content div {
+        padding: 20px;  
+    }
+}

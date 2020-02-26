@@ -1,0 +1,64 @@
+section.block_1 {
+    display: flex;
+    justify-content: center;
+    background: url(../img/section_1/sectionBackground.png) center/cover;
+}
+
+.block_1 > div.content {
+    padding: 80px 20px 145px 20px;
+}
+
+.block_1 > div.content > div {
+    width: 100%;
+    max-width: 550px;
+    min-width: 300px;
+    padding: 50px 40px;
+    background-color: #ffffff;
+    color: #404040;
+    opacity: 0.95;
+}
+
+.block_1 > div.content > div h2 {
+    font-family: "Cormorant Infant";
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+.block_1 > div.content > div p {
+    font-family: "PT Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+@media (max-width: 768px){
+    .block_1 > div.content > div h2 {
+        font-family: "Cormorant Infant";
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 60px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px){
+    .block_1 > div.content {
+        padding: 80px 20px 145px 20px;
+    }
+
+    .block_1 > div.content > div {
+        min-width: 280px;
+        padding: 20px 20px;
+    }
+
+    .block_1 > div.content > div h2 {
+        font-size: 44px;
+        text-align: center;
+    }
+    
+    .block_1 > div.content > div p {
+        font-size: 14px;
+    }
+}
